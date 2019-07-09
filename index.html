@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" type="text/css" href="" />
+    <!--[if lt IE 9]> <![endif]-->
+  </head>
+  <body>
+    <main class="row">
+      <!-- My answer to number 1. -->
+      <form>
+        <!-- Two text fields (name, email) -->
+        Name:<input type="text" name="Name" /><br />
+        Email:<input type="email" name="Email" />
+        <!-- Three hidden fields with the ff IDs: source,medium,campaign -->
+        <input type="hidden" id="source" value="" />
+        <input type="hidden" id="medium" />
+        <input type="hidden" id="campaign" />
+      </form>
+    </main>
+
+    <!-- My answer to number 2. -->
+    <script type="text/javascript">
+      // JS code that sets value to first hidden input
+      document.getElementById("source").value = "google";
+      //   Just alerting it to show the value
+      alert(document.getElementById("source").value);
+    </script>
+  </body>
+</html>
